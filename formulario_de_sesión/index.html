@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<title>Formulario de registro | Odin Project</title>
+</head>
+<body>
+	
+	<main class="main">
+		<div class="aside-image-container">
+			<img class="img-logo" src="imagenes/odin-lined.png" alt="odin project logo">
+			<div class="creditos">
+				Foto de <a href="https://unsplash.com/es/@matreding?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Mathias Reding</a> en <a href="https://unsplash.com/es/fotos/una-palmera-con-un-avion-al-fondo-5AUgMquR2Fw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+			</div>
+		</div>
+
+		<div class="text-container">
+			<h2>This is not a real online service! You know you need something like this in your life
+			to help you realize your deepest dreams.
+			Sign up <em>now</em> to get started.
+			</h2>
+			<p>You <em>Know</em> you want to.</p>
+			<hr>
+		</div>
+
+		<hr>
+
+		<form class="form" action="#" method="#">
+			<p>Let's do this!</p>
+			<div class="inputs-container">
+				<div class="input">
+					<label for="nombre">NOMBRE</label>
+					<input id="nombre" type="text" name="nombre" placeholder="Escribe tu nombre" required>
+				</div>
+
+				<div class="input">
+					<label for="apellido">APELLIDO</label>
+					<input type="text" id="apellido" name="apellido" placeholder="Ingresa tu apellido" required>
+				</div>
+
+				<div class="input">
+					<label for="email">EMAIL</label>
+					<input type="email" id="email" name="email" placeholder="example@example.com" required>
+				</div>
+
+				<div class="input">
+					<label for="numero-telefono">NÚMERO DE TELÉFONO</label>
+					<input type="number" id="numero-telefono" name="num-telefono" minlength="10" maxlength="10" placeholder="11-12345678" required>
+				</div>
+
+				<div class="input">
+					<label for="contraseña">CONTRASEÑA</label>
+					<input type="password" id="contraseña" name="contraseña" placeholder="Ingresa una contraseña" required>
+				</div>
+
+				<div class="input">
+					<label for="confirmar-contraseña">CONFIRMAR CONTRASEÑA</label>
+					<input type="password" id="confirmar-contraseña" name="confirmar-contraseña" placeholder="Escribe tu contraseña" required>
+				</div>
+			</div>
+			<hr>
+
+		<div class="registro-container">
+			<button class="btn-enviar">Crear Cuenta</button>
+			<span>Already have an account? <a href="#">Log in</a></span>
+		</div>
+		</form>
+	</main>
+
+
+
+
+
+
+<script src="script.js"></script>  
+</body>
+</html>

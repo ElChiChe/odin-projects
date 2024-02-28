@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "PlayFair Display", sans-serif;
+}
+
+.main {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	background: #fcfcfc;
+}
+
+.aside-image-container {
+	background-image: url(imagenes/mathias-reding-5AUgMquR2Fw-unsplash.jpg);
+	background-size: cover;
+	background-position: center;
+	width: 30%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-right: 2px solid #0004;
+	flex-direction: column;
+}
+
+.creditos {
+	position: absolute;
+	bottom: 10px;
+}
+
+.img-logo {
+	width: 200px;
+	height: 200px;
+	background: #0003;
+	border-radius: 50%;
+	padding: 15px;
+}
+
+.text-container {
+	position: absolute;
+	top: 10%;
+	right: 30%;
+	width: 38%;
+}
+
+.text-container h2 {
+	font-size: 17px;
+}
+
+.text-container p {
+	margin-top: 10px;
+	font-weight: 700;
+}
+
+.text-container hr {
+	margin-top: 10px;
+}
+
+.form {
+	width: 55%;
+	height: 280px;
+	margin-left: 25px;
+	position: relative;
+	top: 30px;
+}
+
+.form hr {
+	position: relative;
+	bottom: 10px;
+}
+
+.form p {
+	font-size: 20px;
+	font-family: "Playfair Display", sans-serif;
+	margin-bottom: 10px;
+}
+
+.inputs-container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.input {
+	display: flex;
+	width: 50%;
+	flex-direction: column;
+}
+
+.input label {
+	font-size: 13px;
+	margin-bottom: 5px;
+	font-weight: 600;
+}
+
+.input input {
+	width: 80%;
+	height: 40px;
+	padding: 10px;
+	font-size: 12px;
+	border-radius: 10px;
+	border: none;
+	outline: none;
+	background: #E5E7EB;
+	border-bottom: 2px solid #0004;
+}
+
+.input input:focus {
+	border: 1px solid #2f87fa;
+}
+
+.btn-enviar {
+	width: 30%;
+	height: 60%;
+	border-radius: 10px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	border-bottom: 2px solid #0004;
+	background: #596D48;
+	color: #fff;
+	letter-spacing: 1px;
+	font-weight: 600;
+	transition: .5s;
+}
+
+.btn-enviar:hover {
+	box-shadow: 3px 3px 10px #599D48;
+}
+
+.registro-container {
+	width: 60%;
+	height: 65px;
+	display: flex;
+	flex-direction: column;
+}
+
+#numero-telefono::-webkit-inner-spin-button {
+	display: none;
+}
+
+.input .error {
+	border: 1px solid red;
+}

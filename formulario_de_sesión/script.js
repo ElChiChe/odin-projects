@@ -1,7 +1,6 @@
 const contraseña_input = document.querySelector("#contraseña");
 const confirmar_contraseña_input = document.querySelector("#confirmar-contraseña");
 const btn_enviar = document.querySelector(".btn-enviar");
-const valor_contraseña = [];
 
 btn_enviar.addEventListener("click", () => {
 	let valor_contraseña = contraseña_input.value;

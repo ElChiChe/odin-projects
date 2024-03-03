@@ -57,10 +57,16 @@ class UI {
 			<p class="libro-titulo" title="${book.titulo}">${book.titulo}</p>
 			<p class="libro-autor" title="${book.autor}">${book.autor}</p>
 			<p class="libro-paginas">${book.paginas}</p>
-			<p class="libro-leido">Leído <span class="fas fa-check"></span></p>
+			<p class="libro-leido">Leído <span class="fas fa-x"></span></p>
 			<button class="btn-delete">Eliminar</button>
 		`
 		librosContainer.appendChild(card);
+
+		let btnLeido = card.querySelector(".fa-x");
+		btnLeido.addEventListener("click", () => {
+			btnLeido.classList.toggle("fa-x");
+			btnLeido.classList.toggle("fa-check");
+		})
 	}
 
 	removeBook(bookContainer, child) {
@@ -75,14 +81,16 @@ formulario.addEventListener("submit", e => {
 	let tituloValue = tituloInput.value;
 	let autorValue = autorInput.value;
 	let paginasValue = paginasInput.value;
-	let leidoValue = leidoInput.value;
+	let leidoValue = false
 
 	if(tituloValue.length > 20 || autorValue.length > 20) {
 		tituloValue = tituloValue.slice(0, 18) + "...";
 		autorValue = autorValue.slice(0, 18) + "...";
 	}
 
-	let book = new Books(tituloValue, autorValue, paginasValue, leidoValue);
+
+
+	let book = new Books(tituloValue, autorValue, paginasValue);
 	let ui = new UI();
 
 	ui.getInputsValue(book);

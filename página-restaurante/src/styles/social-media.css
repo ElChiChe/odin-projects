@@ -1,0 +1,24 @@
+.section-socialmedia {
+    background-color: #FFF;
+    height: 300px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-text h1 {
+    color: #450c1c;
+}
+
+.section-socialmedia .socialmedia-icons {
+    height: 30%;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.icons {
+    width: 20%;
+    cursor: pointer;
+}
